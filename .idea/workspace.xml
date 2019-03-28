@@ -2,11 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72b6ce85-4e75-4d9c-81cc-d0324e1ed46c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/url-analyser.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/producer/ValidationResponseProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/RegexRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/UrlAnalyserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/UrlAnalyserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/MessageQueueConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/RabbitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/domain/RegexWhitelistDomain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/factory/RegexWhitelistStrategyFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ClientRegexWhitelist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/Regex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/GlobalRegexWhitelist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/message/RegexWhitelistMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/message/RegexMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/producer/ResponseQueueProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/ClientRegexWhitelistRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/GlobalRegexWhitelistRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/UrlValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/UrlValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/ClientRegexWhitelistStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/GlobalRegexWhitelistStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/RegexWhitelistStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/UrlAnalyserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/UrlAnalyserApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/config/MessageQueueConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/domain/RegexWhitelistDomain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/factory/RegexWhitelistStrategyFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/model/ClientRegexWhitelist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/model/GlobalRegexWhitelist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/rabbit/message/RegexWhitelistMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/rabbit/producer/ResponseQueueProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/repository/ClientRegexWhitelistRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/repository/GlobalRegexWhitelistRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/service/UrlValidationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/service/UrlValidationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/strategy/ClientRegexWhitelistStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/strategy/GlobalRegexWhitelistStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/omnilabs/urlanalyser/strategy/RegexWhitelistStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-br.com.omnilabs.urlanalyser.UrlAnaliserApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-br.com.omnilabs.urlanalyser.UrlAnaliserApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/br.com.omnilabs.urlanalyser.UrlAnaliserApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/br.com.omnilabs.urlanalyser.UrlAnaliserApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/url-analyser-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/url-analyser-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/url-analyser-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/url-analyser-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/url-analyser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/url-analyser.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,115 +110,58 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="210">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/GlobalRegexWhitelist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-              <folding>
-                <element signature="e#402#403#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/RegexWhitelistStrategy.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/ClientRegexWhitelistStrategy.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state>
+              <caret lean-forward="true" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile_BKP">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/RabbitConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1213#1214#0" expanded="true" />
-                <element signature="e#1270#1271#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/factory/RegexWhitelistStrategyFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/GlobalRegexWhitelistStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/ApplicationConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/MessageQueueConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#676#677#0" expanded="true" />
+                <element signature="e#735#736#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#1004#1005#0" expanded="true" />
+                <element signature="e#1056#1057#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,32 +191,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/RegularExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ValidationResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ValidationRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/InsertionQueueService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/messagequeue/InsertionQueueService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/messagequeue/InsertionQueueConsumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/ValidationQueueService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/messagequeue/ValidationQueueService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/messagequeue/ValidationQueueConsumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/consumer/ValidationQueueConsumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/consumer/InsertionQueueConsumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/consumer/dto/RegularExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/queue/consumer/InsertionQueueConsumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/queue/message/ValidationResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/queue/message/ValidationResponseMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/rabbit/message/ValidationResponseMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/MessageQueueConfig.java" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/ApplicationConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/rabbit/producer/ResponseQueueProducer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/UrlAnalyserApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/rabbit/consumer/ValidationQueueConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/rabbit/consumer/InsertionQueueConsumer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/ClientWhitelistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/GlobalWhitelistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ClientWhitelist.java" />
@@ -187,24 +201,47 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/message/RegularExpressionMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/RegexWhitelistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/RegexWhitelist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/ClientRegexWhitelistRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/GlobalRegexWhitelistRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/ValidationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/UrlValidationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/GlobalRegexWhitelist.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/RegexWhitelistService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ClientRegex.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/GlobalRegex.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/RegexDomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/domain/RegexDomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/domain/WhitelistDomain.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ClientRegexWhitelist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/factory/RegexWhitelistStrategyFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/RegexWhitelistStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/GlobalRegexWhitelistStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/ClientRegexWhitelistStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-test.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/GlobalRegexWhitelistRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/ClientRegexWhitelistRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/GlobalRegexRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/RegexStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/ClientRegexStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/GlobalRegexStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/factory/RegexStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ClientRegex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/GlobalRegex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/UrlValidationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/UrlValidationStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/ClientRegexRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/UrlAnalyserApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ValidationResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/RegexService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/Regex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/RegexRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/UrlValidationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/MessageQueueConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/producer/ResponseExchangeProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/producer/ValidationResponseProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.java" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/RabbitConfig.java" />
       </list>
     </option>
   </component>
@@ -216,10 +253,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="57" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="119" />
+    <option name="y" value="79" />
+    <option name="width" value="1390" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -292,24 +329,6 @@
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="br.com.omnilabs.urlanalyser" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="domain" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="url-analiser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="url-analyser" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="br.com.omnilabs.urlanalyser" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="factory" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="url-analiser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="url-analyser" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="br.com.omnilabs.urlanalyser" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -374,14 +393,20 @@
               <item name="url-analyser" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="br.com.omnilabs.urlanalyser" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="strategy" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="url-analiser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="url-analyser" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="target" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="url-analiser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="url-analyser" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test/java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="br.com.omnilabs.urlanalyser" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -402,7 +427,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanaliser" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker-compose.yml" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -411,6 +436,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.omnilabs.urlanalyser.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.app">
+  <component name="RunManager">
     <configuration name="app" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="br.com.omnilabs.urlanalyser.UrlAnalyserApplication" />
       <module name="url-analyser" />
@@ -433,11 +462,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings />
       </deployment>
       <method v="2" />
     </configuration>
@@ -452,27 +479,36 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="34" width="1920" height="1045" extended-state="6" />
+    <frame x="0" y="34" width="1920" height="1045" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26040554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053364" side_tool="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="11" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -484,13 +520,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanaliser/model.java" />
     <entry file="file://$PROJECT_DIR$/dockercompose.yml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/url-analyser.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -501,51 +530,188 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/queue/producer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties_OLD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/ClientRegexStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/RegexStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/GlobalRegexStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/factory/RegexStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/domain/RegexDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/UrlValidationClientRegexStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/UrlValidationGlobalAndClientRegexStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/UrlValidationGlobalRegexStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/UrlValidationStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/UrlValidationStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="53" lean-forward="true" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/UrlAnalyserApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/ClientRegexWhitelistRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/GlobalRegex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="360">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/GlobalRegexWhitelistRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/GlobalRegexRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="2129" column="17" lean-forward="true" selection-start-line="2129" selection-start-column="17" selection-end-line="2129" selection-end-column="17" />
+          <folding>
+            <element signature="e#82616#82617#0" expanded="true" />
+            <element signature="e#82667#82668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/RegexService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/UrlValidationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="40" column="55" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/Regex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/message/RegexMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -564,110 +730,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/message/ValidationResponseMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/service/UrlValidationService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/repository/RegexRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/producer/ResponseQueueProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/message/RegexWhitelistMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/domain/RegexWhitelistDomain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ClientRegexWhitelist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/GlobalRegexWhitelist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="e#402#403#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/RegexWhitelistStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/ClientRegexWhitelistStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1270#1271#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/factory/RegexWhitelistStrategyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/model/ValidationResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/strategy/GlobalRegexWhitelistStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/producer/ValidationResponseProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="405">
+          <caret line="27" column="148" selection-start-line="27" selection-start-column="148" selection-end-line="27" selection-end-column="148" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -676,37 +770,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/MessageQueueConfig.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="292">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/ValidationQueueConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="135">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/rabbit/consumer/InsertionQueueConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="390">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/br/com/omnilabs/urlanalyser/UrlAnaliserApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile_BKP">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/omnilabs/urlanalyser/config/RabbitConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
           </folding>
         </state>
       </provider>

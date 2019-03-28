@@ -1,7 +1,11 @@
 package br.com.omnilabs.urlanalyser.rabbit.consumer;
 
-import br.com.omnilabs.urlanalyser.config.MessageQueueConfig;
-import br.com.omnilabs.urlanalyser.rabbit.message.RegexWhitelistMessage;
+import br.com.omnilabs.urlanalyser.config.RabbitConfig;
+import br.com.omnilabs.urlanalyser.model.ValidationResult;
+import br.com.omnilabs.urlanalyser.rabbit.message.ValidationRequestMessage;
+import br.com.omnilabs.urlanalyser.rabbit.message.ValidationResponseMessage;
+import br.com.omnilabs.urlanalyser.rabbit.producer.ValidationResponseProducer;
+import br.com.omnilabs.urlanalyser.service.UrlValidationService;
 import com.google.gson.Gson;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.amqp.core.Queue;
@@ -18,34 +22,38 @@ import org.springframework.stereotype.Component;
 public class ValidationQueueConsumer {
 
 
-    private MessageQueueConfig config;
-    private RabbitTemplate rabbitTemplate;
-    private Queue queue;
+    private ValidationResponseProducer validationResponseProducer;
+    private UrlValidationService urlValidationService;
     private Gson gson;
 
     @Autowired
-    public ValidationQueueConsumer(MessageQueueConfig config,
-                                   RabbitTemplate rabbitTemplate,
-                                   @Qualifier("validationQueue") Queue queue,
-                                   Gson gson) {
-        this.config = config;
-        this.rabbitTemplate = rabbitTemplate;
-        this.queue = queue;
+    public ValidationQueueConsumer(ValidationResponseProducer validationResponseProducer, UrlValidationService urlValidationService, Gson gson) {
+        this.validationResponseProducer = validationResponseProducer;
+        this.urlValidationService = urlValidationService;
         this.gson = gson;
     }
 
-    //TODO: extract property
-    @Async
-    @RabbitListener(queues = "${queue.validation}")
+
+    @RabbitListener(queues = "${validation.queue}")
     public void consume(String payload) {
 
         log.info("Consuming VALIDATION_QUEUE with payload: {}", payload);
 
         try {
             log.info("Converting payload into a message");
-            RegexWhitelistMessage message = this.gson.fromJson(payload, RegexWhitelistMessage.class);
+            ValidationRequestMessage validationRequestMessage = this.gson.fromJson(payload, ValidationRequestMessage.class);
 
-        } catch (Exception e){
+            ValidationResult validationResult = this.urlValidationService.validateUrl(validationRequestMessage.getClient(), validationRequestMessage.getUrl(), validationRequestMessage.getCorrelationId());
+
+            this.validationResponseProducer.send(
+                    new ValidationResponseMessage(
+                            validationResult.getMatch(),
+                            validationResult.getRegex(),
+                            validationResult.getCorrelationId()
+                    )
+            );
+
+        } catch (Exception e) {
             log.error("An error has been occurred while trying to convert payload from message queue", e);
         }
     }
