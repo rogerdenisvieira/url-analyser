@@ -20,11 +20,7 @@ mysql:
   environment:
     MYSQL_DATABASE: axr_challenge
     MYSQL_ROOT_PASSWORD: secret
-  ports:
-    - 3306:3306
 rabbitmq:
   image: rabbitmq:3.6-management
   ports:
     - 15672:15672
-    - 5672:5672
-

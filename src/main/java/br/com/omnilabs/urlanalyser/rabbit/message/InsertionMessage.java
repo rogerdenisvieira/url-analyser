@@ -7,8 +7,9 @@ import lombok.NoArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
-@NoArgsConstructor
-public class RegexMessage {
+import java.io.Serializable;
+
+public class InsertionMessage implements Serializable {
 
     @Nullable
     @JsonProperty("client")
@@ -18,8 +19,11 @@ public class RegexMessage {
     @JsonProperty("regex")
     private String regex;
 
+    public InsertionMessage() {
+    }
 
-    public RegexMessage(String client, String regex) {
+
+    public InsertionMessage(String client, String regex) {
         this.client = client;
         this.regex = regex;
     }
@@ -30,5 +34,13 @@ public class RegexMessage {
 
     public String getRegex() {
         return regex;
+    }
+
+    @Override
+    public String toString() {
+        return "InsertionMessage{" +
+                "client='" + client + '\'' +
+                ", regex='" + regex + '\'' +
+                '}';
     }
 }

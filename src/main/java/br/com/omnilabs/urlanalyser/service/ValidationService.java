@@ -11,17 +11,16 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class UrlValidationService {
+public class ValidationService {
 
     private RegexRepository regexRepository;
 
     @Autowired
-    public UrlValidationService(RegexRepository regexRepository) {
+    public ValidationService(RegexRepository regexRepository) {
         this.regexRepository = regexRepository;
     }
 
     /**
-     *
      * If there are regular expressions for provided client, then applies them and also all global
      * regular expressions. Otherwise, applies just global regular expressions.
      *
@@ -47,10 +46,6 @@ public class UrlValidationService {
             return checkUrlInRegexWhitelist(regexList, url, correlationId);
         }
     }
-
-
-
-
 
     private ValidationResult checkUrlInRegexWhitelist(List<Regex> regexList, String url, Integer correlationId) {
 
